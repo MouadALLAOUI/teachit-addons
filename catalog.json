@@ -1,0 +1,181 @@
+{
+  "catalogVersion": "1.0.0",
+  "name": "TeachIT Official Addons Catalog",
+  "description": "Official educational computer-science games catalogue for the TeachIT offline launcher.",
+  "updatedAt": "2026-10-29T23:13:30.217Z",
+  "games": [
+    {
+      "id": "binary-switch",
+      "name": "Binary Switch Circuit",
+      "version": "1.0.0",
+      "contractVersion": "1.0.0",
+      "minLauncherVersion": "0.1.0",
+      "category": "logic",
+      "difficulty": "Beginner",
+      "shortDescription": "Toggle bit switches to master powers of two and decimal numeral conversion.",
+      "description": "Master binary numerals, powers of two, and bitwise representation by toggling logic switches to match target decimal values.",
+      "learningObjectives": [
+        "Understand binary number representation and bit states (0 and 1)",
+        "Calculate values using powers of two (128, 64, 32, 16, 8, 4, 2, 1)",
+        "Convert between decimal integers and binary byte sequences"
+      ],
+      "instructions": [
+        "Review the target decimal number displayed at the top.",
+        "Click the bit switches to toggle them between 0 and 1.",
+        "The total sum of all active powers of two must match the target number.",
+        "Click Next Challenge to advance when the sum is correct."
+      ],
+      "controls": [
+        {
+          "key": "Left Click",
+          "action": "Toggle bit switch (0 / 1)"
+        },
+        {
+          "key": "Space / Enter",
+          "action": "Submit answer or advance challenge"
+        }
+      ],
+      "estimatedMinutes": 15,
+      "author": "TeachIT Curriculum Lab",
+      "thumbnailUrl": "thumbnails/binary-switch.svg",
+      "downloadUrl": "packages/binary-switch-v1.0.0.zip",
+      "packageSizeBytes": 6327,
+      "sha256": "2dbf15f82b96cb0fe0385e026a908b232442a95d2ad704b7a36c4aea3159d27b",
+      "releaseNotes": "Initial release of Binary Switch Circuit for TeachIT."
+    },
+    {
+      "id": "falling-letters",
+      "name": "Falling Letter",
+      "version": "1.0.0",
+      "contractVersion": "1.0.0",
+      "minLauncherVersion": "0.1.0",
+      "category": "general",
+      "difficulty": "Beginner",
+      "shortDescription": "Catch falling letters with quick keystrokes before they hit the ground.",
+      "description": "Practise keyboard recognition and typing speed by catching falling letters before they hit the ground.",
+      "learningObjectives": [
+        "Identify and locate keyboard keys rapidly",
+        "Improve typing speed and hand-eye coordination",
+        "Reinforce home-row and alphabet muscle memory"
+      ],
+      "instructions": [
+        "Watch letters as they fall from the top of the screen.",
+        "Press the corresponding letter on your keyboard before it hits the ground.",
+        "Each correct letter earns +10 points; missed letters lose 5 points.",
+        "Complete the 60-second round before running out of hearts!"
+      ],
+      "controls": [
+        {
+          "key": "A – Z",
+          "action": "Catch matching falling letter"
+        },
+        {
+          "key": "Space / Enter",
+          "action": "Start or restart round"
+        }
+      ],
+      "estimatedMinutes": 10,
+      "author": "TeachIT Curriculum Lab",
+      "thumbnailUrl": "thumbnails/falling-letters.svg",
+      "downloadUrl": "packages/falling-letters-v1.0.0.zip",
+      "packageSizeBytes": 13187,
+      "sha256": "2a64e4dcbfe9929d05ee25cc21aa3f2c936f209ed80c863893bf8fa6ee135f2a",
+      "releaseNotes": "Initial release of Falling Letter for TeachIT."
+    },
+    {
+      "id": "mouse-master",
+      "name": "Mouse Master",
+      "version": "1.0.0",
+      "contractVersion": "1.0.0",
+      "minLauncherVersion": "0.1.0",
+      "category": "general",
+      "difficulty": "Beginner",
+      "shortDescription": "Pratique le contrôle du curseur et la précision du clic à travers des défis.",
+      "description": "Apprends à utiliser la souris grâce à des défis interactifs.",
+      "learningObjectives": [
+        "Développer la motricité fine et la précision du pointeur de souris",
+        "Maîtriser le simple clic, le double-clic et le clic droit",
+        "Pratiquer le glisser-déposer d'objets à l'écran"
+      ],
+      "instructions": [
+        "Complète les 5 ateliers d'apprentissage progressifs.",
+        "Atelier 1 & 2 : déplace le curseur et clique sur les cibles mobiles.",
+        "Atelier 3 : effectue un double-clic rapide pour ouvrir les éléments.",
+        "Atelier 4 : glisse et dépose les objets vers leur zone de destination.",
+        "Atelier 5 : utilise le clic droit pour faire apparaître les menus contextuels."
+      ],
+      "controls": [
+        {
+          "key": "Déplacement",
+          "action": "Diriger le pointeur de souris"
+        },
+        {
+          "key": "Clic gauche",
+          "action": "Sélectionner et valider les cibles"
+        },
+        {
+          "key": "Double-clic",
+          "action": "Ouvrir les dossiers interactifs"
+        },
+        {
+          "key": "Glisser-déposer",
+          "action": "Déplacer les fichiers vers la corbeille"
+        },
+        {
+          "key": "Clic droit",
+          "action": "Afficher le menu contextuel"
+        }
+      ],
+      "estimatedMinutes": 10,
+      "author": "TeachIT Curriculum Lab",
+      "thumbnailUrl": "thumbnails/mouse-master.svg",
+      "downloadUrl": "packages/mouse-master-v1.0.0.zip",
+      "packageSizeBytes": 20959,
+      "sha256": "3628f46f708866cd51ceb354cbf97cf0ae92c47c344e115678bc58d5b59d20f9",
+      "releaseNotes": "Initial release of Mouse Master for TeachIT."
+    },
+    {
+      "id": "sort-arena",
+      "name": "Sorting Algorithm Arena",
+      "version": "1.0.0",
+      "contractVersion": "1.0.0",
+      "minLauncherVersion": "0.1.0",
+      "category": "algorithms",
+      "difficulty": "Intermediate",
+      "shortDescription": "Compare and analyze sorting algorithms step-by-step in an interactive visual arena.",
+      "description": "Visualize and compare time complexity, item swaps, and sorting mechanics between Bubble Sort and Selection Sort.",
+      "learningObjectives": [
+        "Visualize how sorting algorithms organize unsorted data arrays",
+        "Compare time and swap efficiency between Bubble Sort and Selection Sort",
+        "Analyze comparisons, data exchanges, and sorted sub-arrays step-by-step"
+      ],
+      "instructions": [
+        "Select an algorithm (Bubble Sort or Selection Sort) from the controls.",
+        "Click 'Step' to step through one comparison and swap at a time.",
+        "Observe which bars are highlighted: yellow for comparison, green for sorted.",
+        "Use 'Auto Run' to see the sorting animation execute continuously."
+      ],
+      "controls": [
+        {
+          "key": "Step Button",
+          "action": "Execute the next single comparison/swap"
+        },
+        {
+          "key": "Auto Run Button",
+          "action": "Play continuous sorting animation"
+        },
+        {
+          "key": "Reset Button",
+          "action": "Shuffle bars to generate a new array"
+        }
+      ],
+      "estimatedMinutes": 20,
+      "author": "TeachIT Algorithms Group",
+      "thumbnailUrl": "thumbnails/sort-arena.svg",
+      "downloadUrl": "packages/sort-arena-v1.0.0.zip",
+      "packageSizeBytes": 6034,
+      "sha256": "e3a5cc62225e59aabca1d757fa6fe646878f02d56c1260087e8c7f5fdab72def",
+      "releaseNotes": "Initial release of Sorting Algorithm Arena for TeachIT."
+    }
+  ]
+}

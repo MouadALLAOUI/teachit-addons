@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="saBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061a14" />
+      <stop offset="50%" stop-color="#0b2920" />
+      <stop offset="100%" stop-color="#030d0a" />
+    </linearGradient>
+
+    <!-- Sorted Bar Gradient (Emerald) -->
+    <linearGradient id="sortedBarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Active Compare Bar Gradient (Amber) -->
+    <linearGradient id="compareBarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Swapping Bar Gradient (Cyan/Teal) -->
+    <linearGradient id="unsortedBarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="emeraldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="360" fill="url(#saBgGrad)" />
+
+  <!-- Grid Pattern -->
+  <g stroke="#134e4a" stroke-width="1" opacity="0.3">
+    <line x1="0" y1="80" x2="640" y2="80" />
+    <line x1="0" y1="140" x2="640" y2="140" />
+    <line x1="0" y1="200" x2="640" y2="200" />
+    <line x1="0" y1="260" x2="640" y2="260" />
+  </g>
+
+  <!-- Sorting Arena Baseline -->
+  <line x1="80" y1="270" x2="560" y2="270" stroke="#059669" stroke-width="3" stroke-linecap="round" filter="url(#emeraldGlow)" />
+
+  <!-- Array Bars (Visualizing Sorting Process) -->
+  <!-- Bar 0 (Sorted, Height 40) -->
+  <rect x="110" y="230" width="28" height="40" rx="4" fill="url(#sortedBarGrad)" />
+  <!-- Bar 1 (Sorted, Height 70) -->
+  <rect x="150" y="200" width="28" height="70" rx="4" fill="url(#sortedBarGrad)" />
+  <!-- Bar 2 (Sorted, Height 95) -->
+  <rect x="190" y="175" width="28" height="95" rx="4" fill="url(#sortedBarGrad)" />
+
+  <!-- Bar 3 (Active Comparison - Bar i, Height 140) -->
+  <g>
+    <rect x="230" y="130" width="28" height="140" rx="4" fill="url(#compareBarGrad)" filter="url(#emeraldGlow)" />
+    <!-- Pointer i -->
+    <polygon points="244,115 236,100 252,100" fill="#fbbf24" />
+    <text x="244" y="94" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="900" fill="#fbbf24" text-anchor="middle">i</text>
+  </g>
+
+  <!-- Bar 4 (Active Comparison - Bar j, Height 110) -->
+  <g>
+    <rect x="270" y="160" width="28" height="110" rx="4" fill="url(#compareBarGrad)" filter="url(#emeraldGlow)" />
+    <!-- Pointer j -->
+    <polygon points="284,145 276,130 292,130" fill="#fbbf24" />
+    <text x="284" y="124" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="900" fill="#fbbf24" text-anchor="middle">j</text>
+  </g>
+
+  <!-- Swap Arc between bar 3 and 4 -->
+  <path d="M 244 100 Q 264 75, 284 100" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,3" />
+
+  <!-- Remaining Bars (Unsorted) -->
+  <rect x="310" y="185" width="28" height="85" rx="4" fill="url(#unsortedBarGrad)" />
+  <rect x="350" y="110" width="28" height="160" rx="4" fill="url(#unsortedBarGrad)" />
+  <rect x="390" y="150" width="28" height="120" rx="4" fill="url(#unsortedBarGrad)" />
+  <rect x="430" y="80" width="28" height="190" rx="4" fill="url(#unsortedBarGrad)" />
+  <rect x="470" y="130" width="28" height="140" rx="4" fill="url(#unsortedBarGrad)" />
+  <rect x="510" y="60" width="28" height="210" rx="4" fill="url(#unsortedBarGrad)" />
+
+  <!-- Top Title -->
+  <text x="320" y="48" font-family="'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="900" fill="#f8fafc" letter-spacing="3" text-anchor="middle">
+    SORT ARENA
+  </text>
+  <text x="320" y="66" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#34d399" letter-spacing="4" text-anchor="middle">
+    ALGORITHMS &amp; DATA STRUCTURES
+  </text>
+
+  <!-- Algorithm HUD Pill -->
+  <g transform="translate(225, 290)">
+    <rect width="190" height="28" rx="14" fill="#042f2e" stroke="#14b8a6" stroke-width="1.5" />
+    <text x="95" y="19" font-family="'Segoe UI', Roboto, monospace" font-size="12" font-weight="700" fill="#a7f3d0" text-anchor="middle">
+      QUICKSORT : O(n log n)
+    </text>
+  </g>
+
+  <!-- Category Badge at bottom -->
+  <g transform="translate(260, 326)">
+    <rect width="120" height="20" rx="10" fill="#064e3b" opacity="0.4" stroke="#059669" stroke-width="1" />
+    <text x="60" y="14" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#34d399" text-anchor="middle" letter-spacing="1">
+      ALGORITHMS
+    </text>
+  </g>
+</svg>

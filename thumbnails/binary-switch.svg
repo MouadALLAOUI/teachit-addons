@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="50%" stop-color="#091b36" />
+      <stop offset="100%" stop-color="#050a1a" />
+    </linearGradient>
+
+    <!-- Circuit Trace Gradient -->
+    <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Active Switch Glow -->
+    <linearGradient id="switchOnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Off Switch -->
+    <linearGradient id="switchOffGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+
+    <!-- Card Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="360" fill="url(#bgGrad)" />
+
+  <!-- Cyber Grid Pattern -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="60" x2="640" y2="60" />
+    <line x1="0" y1="120" x2="640" y2="120" />
+    <line x1="0" y1="180" x2="640" y2="180" />
+    <line x1="0" y1="240" x2="640" y2="240" />
+    <line x1="0" y1="300" x2="640" y2="300" />
+    <line x1="80" y1="0" x2="80" y2="360" />
+    <line x1="160" y1="0" x2="160" y2="360" />
+    <line x1="240" y1="0" x2="240" y2="360" />
+    <line x1="320" y1="0" x2="320" y2="360" />
+    <line x1="400" y1="0" x2="400" y2="360" />
+    <line x1="480" y1="0" x2="480" y2="360" />
+    <line x1="560" y1="0" x2="560" y2="360" />
+  </g>
+
+  <!-- Circuit Traces -->
+  <path d="M 40 180 L 120 180 L 160 140 L 480 140 L 520 180 L 600 180" fill="none" stroke="url(#traceGrad)" stroke-width="3" stroke-linecap="round" />
+  <path d="M 120 220 L 220 220 L 260 260 L 420 260 L 460 220 L 540 220" fill="none" stroke="url(#traceGrad)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6,4" />
+
+  <!-- Circuit Nodes -->
+  <circle cx="120" cy="180" r="5" fill="#38bdf8" filter="url(#glow)" />
+  <circle cx="160" cy="140" r="4" fill="#818cf8" />
+  <circle cx="480" cy="140" r="4" fill="#818cf8" />
+  <circle cx="520" cy="180" r="5" fill="#38bdf8" filter="url(#glow)" />
+
+  <!-- 4-Bit Register Display Switches -->
+  <!-- Bit 3 (Value 8) - ON -->
+  <g transform="translate(130, 90)">
+    <rect width="80" height="130" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-width="2" filter="url(#glow)" />
+    <!-- Toggle track -->
+    <rect x="25" y="20" width="30" height="60" rx="15" fill="#0284c7" opacity="0.4" />
+    <circle cx="40" cy="35" r="12" fill="url(#switchOnGrad)" filter="url(#glow)" />
+    <text x="40" y="105" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="22" fill="#38bdf8" text-anchor="middle">1</text>
+    <text x="40" y="122" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11" fill="#64748b" text-anchor="middle">2³ = 8</text>
+  </g>
+
+  <!-- Bit 2 (Value 4) - OFF -->
+  <g transform="translate(230, 90)">
+    <rect width="80" height="130" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <rect x="25" y="20" width="30" height="60" rx="15" fill="#1e293b" />
+    <circle cx="40" cy="65" r="12" fill="url(#switchOffGrad)" />
+    <text x="40" y="105" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="22" fill="#64748b" text-anchor="middle">0</text>
+    <text x="40" y="122" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11" fill="#475569" text-anchor="middle">2² = 4</text>
+  </g>
+
+  <!-- Bit 1 (Value 2) - ON -->
+  <g transform="translate(330, 90)">
+    <rect width="80" height="130" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-width="2" filter="url(#glow)" />
+    <rect x="25" y="20" width="30" height="60" rx="15" fill="#0284c7" opacity="0.4" />
+    <circle cx="40" cy="35" r="12" fill="url(#switchOnGrad)" filter="url(#glow)" />
+    <text x="40" y="105" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="22" fill="#38bdf8" text-anchor="middle">1</text>
+    <text x="40" y="122" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11" fill="#64748b" text-anchor="middle">2¹ = 2</text>
+  </g>
+
+  <!-- Bit 0 (Value 1) - ON -->
+  <g transform="translate(430, 90)">
+    <rect width="80" height="130" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-width="2" filter="url(#glow)" />
+    <rect x="25" y="20" width="30" height="60" rx="15" fill="#0284c7" opacity="0.4" />
+    <circle cx="40" cy="35" r="12" fill="url(#switchOnGrad)" filter="url(#glow)" />
+    <text x="40" y="105" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="22" fill="#38bdf8" text-anchor="middle">1</text>
+    <text x="40" y="122" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11" fill="#64748b" text-anchor="middle">2⁰ = 1</text>
+  </g>
+
+  <!-- Calculation Banner: 8 + 0 + 2 + 1 = 11 -->
+  <g transform="translate(180, 246)">
+    <rect width="280" height="36" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4,4" />
+    <text x="140" y="23" font-family="'Segoe UI', Roboto, monospace" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="middle">
+      <tspan fill="#38bdf8">1011</tspan>
+      <tspan fill="#94a3b8">₂ = </tspan>
+      <tspan fill="#38bdf8">8 + 2 + 1</tspan>
+      <tspan fill="#94a3b8"> = </tspan>
+      <tspan fill="#38bdf8" font-size="16">11</tspan>
+      <tspan fill="#64748b" font-size="11">₁₀</tspan>
+    </text>
+  </g>
+
+  <!-- Top Title Bar -->
+  <text x="320" y="52" font-family="'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="900" fill="#f8fafc" letter-spacing="3" text-anchor="middle">
+    BINARY SWITCH
+  </text>
+  <text x="320" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="4" text-anchor="middle">
+    LOGIC GATES &amp; BIT CONVERSION
+  </text>
+
+  <!-- Category Badge at bottom -->
+  <g transform="translate(260, 310)">
+    <rect width="120" height="24" rx="12" fill="#0369a1" opacity="0.3" stroke="#0284c7" stroke-width="1" />
+    <text x="60" y="16" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1">
+      LOGIC &amp; BYTES
+    </text>
+  </g>
+</svg>
