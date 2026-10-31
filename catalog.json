@@ -2,46 +2,199 @@
   "catalogVersion": "1.0.0",
   "name": "TeachIT Official Addons Catalog",
   "description": "Official educational computer-science games catalogue for the TeachIT offline launcher.",
-  "updatedAt": "2026-10-29T23:13:30.217Z",
+  "updatedAt": "2026-10-31T21:27:46.852Z",
   "games": [
     {
       "id": "binary-switch",
       "name": "Binary Switch Circuit",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "contractVersion": "1.0.0",
       "minLauncherVersion": "0.1.0",
       "category": "logic",
       "difficulty": "Beginner",
       "shortDescription": "Toggle bit switches to master powers of two and decimal numeral conversion.",
-      "description": "Master binary numerals, powers of two, and bitwise representation by toggling logic switches to match target decimal values.",
+      "description": "Master binary numerals, powers of two, and bitwise representation by toggling logic switches to match target decimal values across Practice, Timed, and Endless modes.",
       "learningObjectives": [
         "Understand binary number representation and bit states (0 and 1)",
         "Calculate values using powers of two (128, 64, 32, 16, 8, 4, 2, 1)",
         "Convert between decimal integers and binary byte sequences"
       ],
       "instructions": [
-        "Review the target decimal number displayed at the top.",
-        "Click the bit switches to toggle them between 0 and 1.",
+        "Review the target decimal number displayed on screen.",
+        "Click or press keys 1-8 to toggle bit switches between 0 and 1.",
         "The total sum of all active powers of two must match the target number.",
-        "Click Next Challenge to advance when the sum is correct."
+        "Press Enter or click Check to verify your answer."
       ],
       "controls": [
         {
-          "key": "Left Click",
-          "action": "Toggle bit switch (0 / 1)"
+          "key": "1 - 8",
+          "action": "Toggle switches 128 through 1"
         },
         {
-          "key": "Space / Enter",
-          "action": "Submit answer or advance challenge"
+          "key": "Enter / Space",
+          "action": "Verify answer / continue"
+        },
+        {
+          "key": "H",
+          "action": "Use hint to reveal current total (Challenge modes)"
+        },
+        {
+          "key": "Esc",
+          "action": "Close dialog or prompt exit"
         }
       ],
       "estimatedMinutes": 15,
       "author": "TeachIT Curriculum Lab",
       "thumbnailUrl": "thumbnails/binary-switch.svg",
-      "downloadUrl": "packages/binary-switch-v1.0.0.zip",
-      "packageSizeBytes": 6327,
-      "sha256": "2dbf15f82b96cb0fe0385e026a908b232442a95d2ad704b7a36c4aea3159d27b",
-      "releaseNotes": "Initial release of Binary Switch Circuit for TeachIT."
+      "downloadUrl": "packages/binary-switch-v2.0.0.zip",
+      "packageSizeBytes": 30801,
+      "sha256": "d9fdfae44cb6ad9a8ab8a31b561b3ec4b72b44442530113642593b866279ec7f",
+      "releaseNotes": "Major 2.0.0 upgrade with full-screen layout, Practice/Timed/Endless modes, trilingual support, and procedural audio."
+    },
+    {
+      "id": "computer-quest",
+      "name": "Computer Quest",
+      "version": "1.0.0",
+      "contractVersion": "1.0.0",
+      "minLauncherVersion": "0.1.0",
+      "category": "architecture",
+      "difficulty": "Beginner",
+      "shortDescription": "Reconnais, explore et assemble les composants matériels d'un ordinateur à travers 5 défis interactifs.",
+      "description": "Découvre les composants physiques d'un ordinateur, leur nom, leur fonction et leurs branchements.",
+      "learningObjectives": [
+        "Identifier les 8 composants physiques clés d'un ordinateur (écran, unité centrale, clavier, souris, haut-parleurs, webcam, imprimante, ports USB)",
+        "Distinguer l'unité centrale de l'écran et comprendre les rôles de traitement et d'affichage",
+        "Comprendre les fonctions des périphériques d'entrée, de sortie et des interfaces de connexion USB",
+        "Assembler et positionner correctement les éléments sur un poste de travail informatique"
+      ],
+      "instructions": [
+        "Niveau 1 : Découverte — Explore et clique sur les 8 composants pour comprendre leur rôle.",
+        "Niveau 2 : Reconnaissance — Identifie le bon composant parmi les choix illustrés.",
+        "Niveau 3 : À quoi ça sert ? — Associe chaque fonction essentielle au matériel correspondant.",
+        "Niveau 4 : Assemble ton ordinateur — Glisse et dépose chaque composant à sa place sur le bureau.",
+        "Niveau 5 : Le défi final — Réponds au grand quiz récapitulatif pour valider tes compétences !"
+      ],
+      "controls": [
+        {
+          "key": "Clic gauche / Toucher",
+          "action": "Sélectionner un composant ou valider une réponse"
+        },
+        {
+          "key": "Glisser-déposer",
+          "action": "Déplacer les composants vers leur emplacement cible"
+        },
+        {
+          "key": "Navigation clavier",
+          "action": "Touches Flèches, Tabulation et Entrée pour sélectionner et assembler"
+        }
+      ],
+      "estimatedMinutes": 12,
+      "author": "TeachIT Curriculum Lab",
+      "thumbnailUrl": "thumbnails/computer-quest.svg",
+      "downloadUrl": "packages/computer-quest-v1.0.0.zip",
+      "packageSizeBytes": 4191488,
+      "sha256": "be891efe76103c7267d490db716449ae1222d6c1951bd9a402e62593dc108cab",
+      "releaseNotes": "Initial release of Computer Quest for TeachIT."
+    },
+    {
+      "id": "data-detective",
+      "name": "Data Detective",
+      "version": "1.0.0",
+      "contractVersion": "1.0.0",
+      "minLauncherVersion": "0.1.0",
+      "category": "general",
+      "difficulty": "Beginner",
+      "shortDescription": "Comprends le cycle Données → Traitement → Information à travers des animations et des missions pratiques.",
+      "description": "Découvre le voyage de l'information : comment les données sont collectées, stockées, traitées, diffusées et utilisées pour prendre des décisions.",
+      "learningObjectives": [
+        "Distinguer clairement une donnée brute d'une information utile",
+        "Identifier les 6 grands types de données (texte, numérique, date et heure, image, son, vidéo)",
+        "Maîtriser les 5 étapes indispensables dans l'ordre : Collecter, Stocker, Traiter, Diffuser, Utiliser",
+        "Comprendre le fonctionnement d'un système informatique à travers l'exemple réel de la caisse de supermarché",
+        "Appliquer le cycle complet de traitement des données en autonomie dans la mission de la bibliothèque"
+      ],
+      "instructions": [
+        "Défi 1 : Les données autour de nous — Découvre la différence entre donnée brute et information à travers l'exemple des notes et de la météo.",
+        "Défi 2 : Reconnaître les types de données — Classe les éléments dans les 6 catégories de données (texte, numérique, date, image, son, vidéo).",
+        "Défi 3 : Le parcours de l'information — Observe l'animation des 5 étapes et remets-les dans l'ordre exact.",
+        "Défi 4 : Dans la peau d'un ordinateur — Scanne des produits, stocke les prix, calcule le total et encaisse les achats au supermarché.",
+        "Défi 5 : Mission finale Data Detective — Organise les données de la bibliothèque scolaire pour aider le responsable à choisir les nouveaux livres !"
+      ],
+      "controls": [
+        {
+          "key": "Clic gauche",
+          "action": "Sélectionner des réponses, déclencher des animations et valider"
+        },
+        {
+          "key": "Glisser-déposer",
+          "action": "Glisser des données vers leurs catégories ou ordonner les étapes"
+        },
+        {
+          "key": "Boutons Rejouer",
+          "action": "Rejouer les animations explicatives du cycle de traitement"
+        }
+      ],
+      "estimatedMinutes": 15,
+      "author": "TeachIT Curriculum Lab",
+      "thumbnailUrl": "thumbnails/data-detective.svg",
+      "downloadUrl": "packages/data-detective-v1.0.0.zip",
+      "packageSizeBytes": 34492,
+      "sha256": "35e7bd416d87056c9b208c70910c9c6fe8c538187f5385cd7c020775192dcd2f",
+      "releaseNotes": "Release 1.0.0 of Data Detective for TeachIT."
+    },
+    {
+      "id": "desktop-explorer",
+      "name": "Desktop Explorer",
+      "version": "1.0.0",
+      "contractVersion": "1.0.0",
+      "minLauncherVersion": "0.1.0",
+      "category": "general",
+      "difficulty": "Beginner",
+      "shortDescription": "Découvre les éléments du bureau, gère les fenêtres et organise tes premiers dossiers et fichiers.",
+      "description": "Explore le bureau d'ordinateur, manipule les fenêtres et apprends à créer et organiser tes premiers dossiers et documents texte.",
+      "learningObjectives": [
+        "Identifier les 6 éléments clés du bureau d'ordinateur (le bureau, les icônes, la barre des tâches, le menu Démarrer, la corbeille, le fond d'écran)",
+        "Comprendre la différence entre une application et une fenêtre, et maîtriser les contrôles (réduire, agrandir, restaurer, fermer)",
+        "Créer, ouvrir et renommer des dossiers pour structurer son espace de travail",
+        "Utiliser un éditeur de texte pour rédiger, nommer et enregistrer un document (.txt)",
+        "Déplacer des documents dans des dossiers et vérifier l'organisation de ses fichiers"
+      ],
+      "instructions": [
+        "Défi 1 : Découvrir le bureau — Repère et clique sur les éléments demandés pour comprendre leur utilité.",
+        "Défi 2 : Découvrir les fenêtres — Ouvre l'éditeur de texte et entraîne-toi à manipuler sa fenêtre (réduire, agrandir, restaurer, fermer).",
+        "Défi 3 : Créer et organiser des dossiers — Fais un clic droit pour créer un dossier « Informatique » puis renomme-le.",
+        "Défi 4 : Créer et enregistrer un document texte — Écris une phrase dans l'éditeur de texte et enregistre ton premier fichier.",
+        "Défi 5 : Mission finale — Applique tout ce que tu as appris en toute autonomie pour créer et organiser tes fichiers !"
+      ],
+      "controls": [
+        {
+          "key": "Clic gauche",
+          "action": "Sélectionner un élément, cliquer sur les boutons et naviguer"
+        },
+        {
+          "key": "Double-clic",
+          "action": "Ouvrir des applications, des dossiers et des documents"
+        },
+        {
+          "key": "Clic droit",
+          "action": "Ouvrir le menu contextuel (Nouveau dossier, Renommer, etc.)"
+        },
+        {
+          "key": "Glisser-déposer",
+          "action": "Déplacer des fichiers vers des dossiers ou déplacer des fenêtres"
+        },
+        {
+          "key": "Clavier",
+          "action": "Saisir du texte dans l'éditeur et taper le nom des dossiers et fichiers"
+        }
+      ],
+      "estimatedMinutes": 15,
+      "author": "TeachIT Curriculum Lab",
+      "thumbnailUrl": "thumbnails/desktop-explorer.svg",
+      "downloadUrl": "packages/desktop-explorer-v1.0.0.zip",
+      "packageSizeBytes": 143493,
+      "sha256": "ec982546828b6332397222b4847d428a162290e1855825f723980bc9eb6f7239",
+      "releaseNotes": "Release 1.0.0 of Desktop Explorer for TeachIT."
     },
     {
       "id": "falling-letters",
@@ -130,9 +283,70 @@
       "author": "TeachIT Curriculum Lab",
       "thumbnailUrl": "thumbnails/mouse-master.svg",
       "downloadUrl": "packages/mouse-master-v1.0.0.zip",
-      "packageSizeBytes": 20959,
-      "sha256": "3628f46f708866cd51ceb354cbf97cf0ae92c47c344e115678bc58d5b59d20f9",
+      "packageSizeBytes": 22778,
+      "sha256": "96e3687264e4555b9b3411ab3c071ad1fd23f144e0b7b247357521377f03cfff",
       "releaseNotes": "Initial release of Mouse Master for TeachIT."
+    },
+    {
+      "id": "mouse-master-2",
+      "name": "Mouse Master II",
+      "version": "1.0.0",
+      "contractVersion": "1.0.0",
+      "minLauncherVersion": "0.1.0",
+      "category": "general",
+      "difficulty": "Intermediate",
+      "shortDescription": "La suite de Mouse Master : maîtrise la sélection multiple, le redimensionnement et les interactions avancées.",
+      "description": "Perfectionne ton utilisation de la souris : sélection, redimensionnement, navigation et sélection de texte.",
+      "learningObjectives": [
+        "Comprendre l'impact de la taille et de la distance sur le pointage (loi de Fitts)",
+        "Maîtriser la sélection rectangulaire par lasso sur le bureau",
+        "Effectuer des sélections multiples avec Ctrl+clic et Shift+clic",
+        "Redimensionner précisément les fenêtres et reconnaître les curseurs",
+        "Naviguer avec la molette et maîtriser le zoom Ctrl+molette",
+        "Sélectionner précisément du texte au mot, à la ligne et par bloc"
+      ],
+      "instructions": [
+        "Atelier 1 : Clique sur les cibles vertes en mesurant ta précision et ta réactivité.",
+        "Atelier 2 : Trace un rectangle de sélection (lasso) pour capturer uniquement les fichiers ciblés.",
+        "Atelier 3 : Utilise Ctrl+clic et Shift+clic pour composer une sélection multiple personnalisée.",
+        "Atelier 4 : Redimensionne la fenêtre aux dimensions exactes de 640x480 pixels.",
+        "Atelier 5 : Fais défiler la page avec la molette et zoome à 150% avec Ctrl+molette.",
+        "Atelier 6 : Sélectionne le texte avec précision par glisser, double-clic et triple-clic.",
+        "Mission Bureau : Intègre toutes tes compétences dans une suite de tâches réalistes."
+      ],
+      "controls": [
+        {
+          "key": "Déplacement",
+          "action": "Diriger le pointeur de souris"
+        },
+        {
+          "key": "Clic gauche",
+          "action": "Sélectionner et valider les cibles"
+        },
+        {
+          "key": "Glisser (Lasso)",
+          "action": "Tracer une zone de sélection rectangulaire"
+        },
+        {
+          "key": "Ctrl + Clic",
+          "action": "Ajouter ou retirer un élément de la sélection"
+        },
+        {
+          "key": "Shift + Clic",
+          "action": "Sélectionner une plage continue d'éléments"
+        },
+        {
+          "key": "Molette",
+          "action": "Faire défiler le document (Ctrl+molette pour zoomer)"
+        }
+      ],
+      "estimatedMinutes": 20,
+      "author": "TeachIT Curriculum Lab",
+      "thumbnailUrl": "thumbnails/mouse-master-2.svg",
+      "downloadUrl": "packages/mouse-master-2-v1.0.0.zip",
+      "packageSizeBytes": 42329,
+      "sha256": "ba8c4bc8be2d229bdf39e405dc83c6a488ab0eda835287ca807e835bf5132d70",
+      "releaseNotes": "Release 1.0.0 of Mouse Master II for TeachIT."
     },
     {
       "id": "sort-arena",

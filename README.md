@@ -8,9 +8,13 @@ This repository hosts pre-packaged, offline-ready educational games compliant wi
 
 | Game | Category | Difficulty | Version | Package Size |
 | :--- | :--- | :--- | :--- | :--- |
-| **Binary Switch Circuit** | Logic | Beginner | `v1.0.0` | `packages/binary-switch-v1.0.0.zip` |
-| **Falling Letters** | General | Beginner | `v1.0.0` | `packages/falling-letters-v1.0.0.zip` |
+| **Binary Switch Circuit** | Logic | Beginner | `v2.0.0` | `packages/binary-switch-v2.0.0.zip` |
+| **Computer Quest** | Architecture | Beginner | `v1.0.0` | `packages/computer-quest-v1.0.0.zip` |
+| **Data Detective** | General | Beginner | `v1.0.0` | `packages/data-detective-v1.0.0.zip` |
+| **Desktop Explorer** | General | Beginner | `v1.0.0` | `packages/desktop-explorer-v1.0.0.zip` |
+| **Falling Letter** | General | Beginner | `v1.0.0` | `packages/falling-letters-v1.0.0.zip` |
 | **Mouse Master** | General | Beginner | `v1.0.0` | `packages/mouse-master-v1.0.0.zip` |
+| **Mouse Master II** | General | Intermediate | `v1.0.0` | `packages/mouse-master-2-v1.0.0.zip` |
 | **Sorting Algorithm Arena** | Algorithms | Intermediate | `v1.0.0` | `packages/sort-arena-v1.0.0.zip` |
 
 ---
@@ -25,7 +29,7 @@ This repository hosts pre-packaged, offline-ready educational games compliant wi
    ```
    *(TeachIT automatically resolves this to the raw GitHub catalog).*
 4. Click **Charger le catalogue** (or **Actualiser**).
-5. All 4 games appear with their preview thumbnails, learning objectives, and single-click **Installer** buttons.
+5. All 8 games appear with their preview thumbnails, learning objectives, and single-click **Installer** buttons.
 
 ---
 
@@ -41,14 +45,22 @@ All packages include SHA-256 cryptographic digests declared in `catalog.json`. T
 teachit-addons/
 ├── catalog.json              # Main catalog index parsed by TeachIT
 ├── packages/                 # Standalone game ZIP archives
-│   ├── binary-switch-v1.0.0.zip
+│   ├── binary-switch-v2.0.0.zip
+│   ├── computer-quest-v1.0.0.zip
+│   ├── data-detective-v1.0.0.zip
+│   ├── desktop-explorer-v1.0.0.zip
 │   ├── falling-letters-v1.0.0.zip
 │   ├── mouse-master-v1.0.0.zip
-│   └── sort-arena-v1.0.0.zip
+│   ├── mouse-master-2-v1.0.0.zip
+│   ├── sort-arena-v1.0.0.zip
 ├── thumbnails/               # High-contrast game preview icons
 │   ├── binary-switch.svg
+│   ├── computer-quest.svg
+│   ├── data-detective.svg
+│   ├── desktop-explorer.svg
 │   ├── falling-letters.svg
 │   ├── mouse-master.svg
-│   └── sort-arena.svg
+│   ├── mouse-master-2.svg
+│   ├── sort-arena.svg
 └── README.md                 # Documentation
 ```
